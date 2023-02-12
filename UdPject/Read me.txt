@@ -1,0 +1,33 @@
+1.INSTALLATION
+
+[MAKE SURE THAT YOUR CONNECTED TO THE INTERNET ]
+
+Go to the Installation folder and run the Install.sh script
+
+2.PROJECT
+run the "run.py" and the "Telegram_bot.py"
+make sure that you have connected the xbee in the raspberry pi in the usb port
+
+
+3.Bot help (If want to modify the code )
+To send messages you need
+ 	(i)chat id  "every user has a unique chat id"  
+	(ii)text 
+Example
+bot.send_message(chat_id=123,text="hello world")
+---for more help go to the telegram-bot documentation
+
+
+4.To make the project run automatically on boot do the following
+     (i) sudo crontab -e
+     (ii) edit the last line to
+
+      @reboot sh /home/pi/UdPject/Tel.sh >/home/pi/UdPject/logs/cronlog 2>&1  
+
+     (iii)save changes and exit  control+x
+
+
+
+
+
+
